@@ -24,8 +24,8 @@ import com.juan.task.domain.model.Task;
 import com.juan.task.infrastructure.persistence.jpa.TaskRepository;
 
 @Controller
-@RequestMapping(path="/user/{userId}/task")
-public class TaskController extends AbstractController {
+@RequestMapping(path="/api/user/{userId}/task")
+public class TaskController {
 	private Logger LOG = LoggerFactory.getLogger(TaskController.class);
 	
 	@Autowired

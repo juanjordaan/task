@@ -21,8 +21,8 @@ import com.juan.task.domain.model.User;
 import com.juan.task.infrastructure.persistence.jpa.UserRepository;
 
 @Controller
-@RequestMapping(path="/user")
-public class UserController extends AbstractController {
+@RequestMapping(path="/api/user")
+public class UserController {
 	private Logger LOG = LoggerFactory.getLogger(UserController.class);
 	
 	@Autowired

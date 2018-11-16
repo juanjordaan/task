@@ -66,7 +66,7 @@ public class TaskIntegrationTest extends AbstractIntegrationTest<Task> {
 	
 	@Override
 	protected String getRestPath() {
-		return "/user/{userId}/task";
+		return "/api/user/{userId}/task";
 	}
 	
 	protected Task post(Long userId, Task dto) {

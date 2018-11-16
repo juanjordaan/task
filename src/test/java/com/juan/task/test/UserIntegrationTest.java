@@ -63,7 +63,7 @@ public class UserIntegrationTest extends AbstractIntegrationTest<User> {
 	
 	@Override
 	protected String getRestPath() {
-		return "/user";
+		return "/api/user";
 	}
 	
 	protected User post(User dto) {
