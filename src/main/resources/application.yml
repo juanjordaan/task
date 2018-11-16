@@ -1,0 +1,17 @@
+server.port : 8080
+
+---
+spring:
+  profiles: test
+  jpa:
+    properties:
+      javax:
+        persistence:
+          schema-generation:
+            database.action: drop-and-create
+            drop-source: script
+            create-source: script-then-metadata
+            drop-script-source: drop.ddl
+            create-script-source: create.ddl
+          sql-load-script-source: load.ddl
+      hibernate.hbm2ddl.import_files_sql_extractor: org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor
